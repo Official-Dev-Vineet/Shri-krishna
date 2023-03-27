@@ -16,13 +16,11 @@ body {
   overflow: hidden;
 }
 img {
-  width: 50%;
+    width: 50%;
   border-radius: 10px;
   border: 10px double rgb(255, 213, 0);
   box-shadow: 0 0 30px rgba(12, 9, 9, 0.534);
   cursor: pointer;
-  animation: animate1 3s infinite linear;
-  transform: 0.3s;
 }
 div.first,
 div.second {
@@ -84,15 +82,7 @@ div.fourth {
   background-position: center;
   background-repeat: no-repeat;
 }
-iframe {
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  z-index: 1;
-  /* visibility: hidden; */
-  height: 200px;
-  width: 200px;
-}
+
 div img {
   height: 100%;
   width: 100%;
@@ -116,16 +106,6 @@ h1 {
   );
   -webkit-background-clip: text;
   background-clip: text;
-  animation: bg 3s infinite linear alternate;
-}
-@keyframes bg {
-  0% {
-    background-position: 0;
-    text-rendering: optimizeSpeed;
-  }
-  100% {
-    background-position: 500px;
-  }
 }
 h1:nth-child(1) {
   position: absolute;
