@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jai Shri krishna</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>jai shri krishna</h1>
+    <h1>jai shri radhe</h1>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third">
+      <img
+        src="https://i.pinimg.com/originals/6a/d5/da/6ad5da08cd7d31c0258b1ba369a30b97.gif"
+        alt=""
+      />
+    </div>
+    <div class="fourth">
+      <img
+        src="https://i.pinimg.com/originals/6a/d5/da/6ad5da08cd7d31c0258b1ba369a30b97.gif"
+        alt=""
+      />
+    </div>
+    <img
+      draggable="false"
+      data-tilt=""
+      src="https://i.pinimg.com/736x/56/a9/4d/56a94d7453e10084cfb54bb5642c3b2f.jpg"
+      alt=""
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
+    >
+              VanillaTilt.init(document.querySelectorAll("img"), {
+        reverse: true,
+        max: 65,
+        perspective: 1000,
+        easing: "cubic-bezier(.03,.98,.52,.99)",
+        scale: 1.4,
+        speed: 500,
+        transition: true,
+        axis: null,
+        glare: true,
+        "max-glare": 1,
+        "glare-prerender": true,
+        "mouse-event-element": null,
+        reset: false
+      });
+    </script>
+    <script>
+      const count = 100;
+      let i = 0;
+      while (i < count) {
+        let element = document.createElement("i");
+        let size = Math.random() * 80;
+        let posX = Math.floor(Math.random() * window.innerWidth);
+        let delay = Math.random() * -20;
+        let duration = Math.random() * 10;
+        element.style.width = 10 + size + "px";
+        element.style.height = 10 + size + "px";
+        element.style.left = posX + "px";
+        element.style.animationDelay = delay + "s";
+        element.style.animationDuration = 5 + duration + "s";
+        element.style.webkitBoxShadow = " 0 0 30px #605678";
+        document.body.appendChild(element);
+        i++;
+      }
+    </script>
+  </body>
+</html>
